@@ -26,11 +26,6 @@
                     <li class="header-item"> <a href="" class="color-contact contact-class link">Contacts</a></li>
                 </ul>
             </nav>
-            <button type="button" class="mobule-menu-open-btn">
-                <svg class="mobule-menu-open-button-icon" width="32" height="22">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-            </button>
             <address>
                 <ul class="auth-nav list">
                     <li class="portfolio-navigation"><a href="mailto:info@devstudio.com"
@@ -38,24 +33,33 @@
                     <li class="portfolio-navigation"><a href="tel:380001111111" class="contact-class link">+38 (000) 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
+            </div>
+            <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
+                <svg class="mobule-menu-open-button-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+        
         <div class="mobile-menu">
-            <div class="container mobile-menu-container">
-                <button class="mobile-menu-close-btn">
+            <div class="container mobile-menu-container js-menu-container">
+                <button class="mobile-menu-close-btn js-close-menu">
             <svg class="mobile-menu-close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-Vector-1"></use>
             </svg>
-            <ul class="header-list-stydio">
-                <li class="header-item"><a href="./index.html" class="color-contact contact-class-stydio current-link link">Studio</a></li>
-                <li class="header-item"> <a href="./portfolio.html" class="color-contact contact-class-stydio link">Portfolio</a></li>
-                <li class="header-item"> <a href="" class="color-contact contact-class-stydio link">Contacts</a></li>
-            </ul>
-            <ul class="auth-nav list">
-                <li class="portfolio-navigation"><a href="mailto:info@devstudio.com"
-                        class="contact-class-stydio link">info@devstudio.com</a></li>
-                <li class="portfolio-navigation"><a href="tel:380001111111" class="contact-class-stydio link">+38 (000) 111 11 11</a></li>
-            </ul>
                 </button>
+                <ul class="header-list-stydio">
+                    <li class="header-item"><a href="./index.html"
+                            class="color-contact contact-class-stydio current-link link">Studio</a></li>
+                    <li class="header-item"> <a href="./portfolio.html" class="color-contact contact-class-stydio link">Portfolio</a>
+                    </li>
+                    <li class="header-item"> <a href="" class="color-contact contact-class-stydio link">Contacts</a></li>
+                </ul>
+                <ul class="auth-nav list">
+                    <li class="portfolio-navigation"><a href="mailto:info@devstudio.com"
+                            class="contact-class-stydio link">info@devstudio.com</a></li>
+                    <li class="portfolio-navigation"><a href="tel:380001111111" class="contact-class-stydio link">+38 (000) 111 11
+                            11</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -498,7 +502,7 @@
     </div> -->
     
     <!-- <script src="./js/modal.js"></script> -->
-    <!-- <script defer src="js/mobile-menu.js"></script>  -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
