@@ -100,7 +100,7 @@ img {
       display: none;
       }
 
-    .contact-class {
+    .address-navigation {
       display: none;
       }
 
@@ -273,6 +273,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
+    padding: 0;
   background: #FFFFFF;
   border-bottom: 1px solid #E7E9FC;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -311,23 +312,14 @@ img {
       color: #2E2F42;
     }
     }
-
-   @media screen and (min-width: 768px) {
-  .auth-nav {
-      display: flex;
-      flex-direction: column;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      gap: 12px;
-    }
-   }
     
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1157px) {
   .portfolio-navigation {
       display: flex;
       flex-direction: column-reverse;
       flex-wrap: wrap;
       row-gap: 12px;
+
     }
     }
     
@@ -340,12 +332,32 @@ img {
       letter-spacing: 0.02em;
       color: #434455;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
      }
     }
 
+        @media screen and (min-width: 768px) {
+      .contact-class-mail {
+        padding-top: 16px;
+      }
+      }
+     
+      @media screen and (min-width: 768px) {
+      .contact-class-tel {
+      padding-bottom: 16px;
+      }
+     }
 
-
-
+    @media screen and (min-width: 1158px) {
+    .portfolio-navigation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0;
+      gap: 40px;
+    }
+    }
+       
 
 
 
@@ -1304,10 +1316,10 @@ body {
   color: #404BBF;
 }
 
-.auth-nav {
+/* .auth-nav {
   display: flex;
   gap: 40px;
-}
+} */
 
  .portfolio-navigation {
   font-style: normal;
@@ -1348,7 +1360,7 @@ body {
 .current-link {
 position: relative;
 color: #404BBF;
-padding-bottom: 28px;
+/* padding-bottom: 28px; */
 }
 
 .current-link::after {
