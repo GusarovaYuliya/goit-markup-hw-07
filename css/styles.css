@@ -1885,7 +1885,29 @@ border-radius: 0px 0px 4px 4px;
 } */
 
 /* -----------------FOOTER -----------------------*/
+
+.footer {
+  background: #2f303a;
+}
+
+@media screen and (max-widt:1157px) {
+  .footer {
+    background: #2E2F42;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+ @media screen and (min-widt:1158px) {
+   .footer {
+     background: #2f303a;
+     padding-top: 100px;
+     padding-bottom: 100px;
+   }
+ }
+
  
+
 .logo-footer-studio {
   font-weight: 800;
   font-size: 18px;
@@ -2101,21 +2123,9 @@ border-radius: 0px 0px 4px 4px;
   }
 }
 
-@media screen and (max-widt:1157px){
-  .footer {
-    background-color: #2E2F42;
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-} 
+
   
-@media screen and (min-widt:1158px) {
-  .footer {
-      background-color: #2f303a;
-      padding-top: 100px;
-      padding-bottom: 100px;
-  }
-}
+
 
 @media screen and (min-widt:1158px) {
   .styles-item {
