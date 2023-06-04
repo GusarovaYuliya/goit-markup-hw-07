@@ -27,7 +27,7 @@
                 </ul>
             </nav>
 
-            <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="true">
+            <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="mobile-menu-open-button-icon" width="32" height="22">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
@@ -43,7 +43,7 @@
           
             
         </div>
-        <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
             <div class="container mobile-menu-container">
                 <button class="mobile-menu-close-btn js-close-menu">
             <svg class="mobile-menu-close-icon" width="8" height="8">
@@ -63,34 +63,34 @@
                             class="contact-class-stydio-navigation-mail link">info@devstudio.com</a></li>
                     
                 </ul>
-                <ul class="stydio-sotial-list list">
-                    <li class="mobile-sotial-item">
-                        <a class="mobile-sotial-link" href="mobile-sotial-link">
-                            <svg class="mobile-sotial-icon" width="16" height="16">
+                <ul class="mobile-stydio-list list">
+                    <li class="mobile-stydio-item">
+                        <a class="mobile-stydio-link" href="mobile-stydio-link">
+                            <svg class="mobile-stydio-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-instagram-2">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="mobile-sotial-item">
-                        <a class="mobile-sotial-link" href="mobile-sotial-link">
-                            <svg class="mobile-sotial-icon" width="16" height="16">
+                    <li class="mobile-stydo-item">
+                        <a class="mobile-stydio-link" href="mobile-stydio-link">
+                            <svg class="mobile-stydio-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-twitter1">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="mobile-sotial-item">
-                        <a class="mobile-sotial-link" href="mobile-sotial-link">
-                            <svg class="mobile-sotial-icon" width="16" height="16">
+                    <li class="mobile-stydio-item">
+                        <a class="mobile-stydio-link" href="mobile-stydio-link">
+                            <svg class="mobile-stydio-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-facebook-1">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="mobile-sotial-item">
-                        <a class="mobile-sotial-link" href="mobile-sotial-link">
-                            <svg class="mobile-sotial-icon" width="16" height="16">
+                    <li class="mobile-stydio-item">
+                        <a class="mobile-stydio-link" href="mobile-stydio-link">
+                            <svg class="mobile-stydio-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-linkedin-1">
                                 </use>
                             </svg>
@@ -181,8 +181,22 @@
                 <li class="command-item">
                     <picture>
                         <!-- ----DESKTOP----- -->
-                        <source srcset="./images/img-mark-guerrero.webp">
-                    <img src="./images/mark-guerrero.jpg" alt="product designer" width="264" height="260">
+                        <source srcset="./images/img-mark-guerrero-desktop.webp 1x, ./images/img-mark-guerrero-desktop@2x.webp 2x"
+                        media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-mark-guerrero-desktop.jpg 1x, ./images/img-mark-guerrero-desktop@2x.jpg 2x"
+                         media="(min-width: 1158px)">
+                         <!-- ---TABLET---- -->
+                        <source srcset="./images/img-mark-guerrero-tablet.webp 1x, ./images/img-mark-guerrero-tablet@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-mark-guerrero-tablet.jpg 1x, ./images/img-mark-guerrero-tablet@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                            <!-- -----MOBILE----- -->
+                            <source srcset="./images/img-mark-guerrero-mobile.webp 1x, ./images/img-mark-guerrero-mobile@2x.webp 2x"
+                                media="(min-width: 1158px)" type="image/webp">
+                            <source srcset="./images/img-mark-guerrero-mobile.jpg 1x, ./images/img-mark-guerrero-mobile@2x.jpg 2x"
+                                media="(min-width: 1158px)">
+
+                    <img src="./images/img-mark-guerrero.jpg" alt="product designer" width="264" height="260">
                     </picture>
                     <div class="masters-item-bottom">
                     <h3 class="command-pre-title">Mark Guerrero</h3>
@@ -226,7 +240,24 @@
                     </div>
                 </li>
                 <li class="command-item">
-                    <img src="./images/tom-ford.jpg" alt="frontend developer" width="264" height="260">
+                    <picture>
+                        <!-- ----DESKTOP----- -->
+                        <source srcset="./images/img-tom-ford-desktop.webp 1x, ./images/img-tom-ford-desktop@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-tom-ford-desktop.jpg 1x, ./images/img-tom-ford-desktop@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                        <!-- ---TABLET---- -->
+                        <source srcset="./images/img-tom-ford-tablet.webp 1x, ./images/img-tom-ford-tablet@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-tom-ford-tablet.jpg 1x, ./images/img-tom-ford-tablet@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                        <!-- -----MOBILE----- -->
+                        <source srcset="./images/img-tom-ford-mobile.webp 1x, ./images/img-tom-ford-mobile@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-tom-ford-mobile.jpg 1x, ./images/img-tom-ford-mobile@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                    <img src="./images/img-tom-ford.jpg" alt="frontend developer" width="264" height="260">
+                    </picture>
                     <div class="masters-item-bottom">
                     <h3 class="command-pre-title">Tom Ford</h3>
                     <p class="command-pre-text" >Frontend Developer</p>
@@ -266,7 +297,24 @@
                     </div>
                 </li>
                 <li class="command-item">
-                    <img src="./images/camila-garcia.jpg" alt="marketing" width="264" height="260">
+                    <picture>
+                        <!-- ----DESKTOP----- -->
+                        <source srcset="./images/img-camila-garcia-desktop.webp 1x, ./images/img-camila-garcia-desktop@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-camila-garcia-desktop.jpg 1x, ./images/img-camila-garcia-desktop@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                        <!-- ---TABLET---- -->
+                        <source srcset="./images/img-camila-garcia-tablet.webp 1x, ./images/img-camila-garcia-tablet@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-camila-garcia-tablet.jpg 1x, ./images/img-camila-garcia-tablet@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                        <!-- -----MOBILE----- -->
+                        <source srcset="./images/img-camila-garcia-mobile.webp 1x, ./images/img-camila-garcia-mobile@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-camila-garcia-mobile.jpg 1x, ./images/img-camila-garcia-mobile@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                    <img src="./images/img-camila-garcia.jpg" alt="marketing" width="264" height="260">
+                    </picture>
                     <div class="masters-item-bottom">
                     <h3 class="command-pre-title">Camila Garcia</h3>
                     <p class="command-pre-text">Marketing</p>
@@ -307,7 +355,24 @@
                     </div>
                 </li>
                 <li class="command-item">
-                    <img src="./images/daniel-wilson.jpg" alt="ui designer" width="264" height="260">
+                    <picture>
+                        <!-- ----DESKTOP----- -->
+                        <source srcset="./images/img-daniel-wilson-desktop.webp 1x, ./images/img-daniel-wilson-desktop@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-daniel-wilson-desktop.jpg 1x, ./images/img-daniel-wilson-desktop@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                        <!-- ---TABLET---- -->
+                        <source srcset="./images/img-daniel-wilson-tablet.webp 1x, ./images/img-daniel-wilson-tablet@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-daniel-wilson-tablet.jpg 1x, ./images/img-daniel-wilson-tablet@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                        <!-- -----MOBILE----- -->
+                        <source srcset="./images/img-daniel-wilson-mobile.webp 1x, ./images/img-daniel-wilson-mobile@2x.webp 2x"
+                            media="(min-width: 1158px)" type="image/webp">
+                        <source srcset="./images/img-daniel-wilson-mobile.jpg 1x, ./images/img-daniel-wilson-mobile@2x.jpg 2x"
+                            media="(min-width: 1158px)">
+                    <img src="./images/img-daniel-wilson.jpg" alt="ui designer" width="264" height="260">
+                    </picture>
                     <div class="masters-item-bottom">
                     <h3 class="command-pre-title">Daniel Wilson</h3>
                     <p class="command-pre-text">UI Designer</p>
@@ -352,7 +417,7 @@
             </div>
         </section>
         
-        <!-- <section class="clients-section">
+        <section class="section">
           <div class="clients-container container">
             <h2 class="clients-title">Customers</h2>
             <ul class="clients-list list">
@@ -400,7 +465,7 @@
                  </li>
                  </ul>
             </div>
-        </section> -->
+        </section>
         
     </main>
 
@@ -569,3 +634,35 @@
                         <use class="icon-menu" href="./images/icons.svg#icon-charm-menu-hamburger"></use>
                      </svg>
                         </button> -->
+
+                       
+                        <!-- .menu-container {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        padding: 32px;
+                        background-color: #3f51b5;
+                        z-index: 999;
+                        
+                        transform: translateX(100%);
+                        transition: transform 250ms ease-in-out;
+                        }
+                        .menu-container {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        padding: 32px;
+                        background-color: #3f51b5;
+                        z-index: 999;
+                        
+                        transform: translateX(100%);
+                        transition: transform 250ms ease-in-out;
+                        }
+                        
+                        .menu-container.is-open {
+                        transform: translateX(0);
+                        } -->
