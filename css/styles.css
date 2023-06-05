@@ -22,9 +22,16 @@ img {
 
 .container {
   width: 1158px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1158px) {
+.container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
 }
 
 button {
@@ -116,7 +123,7 @@ img {
 
 
      @media screen and (max-width: 767px){
-      .page{
+      .header{
         padding-top: 24px;
         padding-bottom: 22px;
       }
@@ -254,8 +261,8 @@ img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4D5AE5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--accent-navigation-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
     
   .mobile-stydio-icon {
@@ -344,17 +351,13 @@ img {
 .stydio-stydio-item {
   align-items: center;
   justify-content: space-between;
-  background-color: #4D5AE5;
+  /* background-color: #4D5AE5; */
   border-radius: 50%;
-  fill: #F4F4FD;
+  fill: var(--accent-navigation-color);
   fill: currentColor;
   width: 40px;
   height: 40px;
 }
-
-
-
-
 
 .mobile-stydio-link {
   display: flex;
@@ -363,7 +366,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--color-icon);
+  /* background-color: ; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -393,6 +396,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
   background: #FFFFFF;
   border-bottom: 1px solid #E7E9FC;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -417,6 +422,20 @@ img {
   }
  }
   
+ @media screen and (min-width: 768px) and (max-width:1157px) {
+  .contact-class-mail {
+    margin-bottom: 12px;
+  }
+ }
+
+ @media screen and (min-width: 768px) {
+  .current-link {
+      position: relative;
+      color: #404BBF;
+      padding-bottom: 24px;
+    }
+ }
+
  @media screen and (min-width: 768px) {
 .header-list {
     display: flex;
@@ -424,7 +443,7 @@ img {
   }
  }
     @media screen and (min-width: 768px) {
-  .header-item {
+  .color-contact {
       font-weight: 500;
       font-size: 16px;
       line-height: 1.5;
@@ -472,7 +491,14 @@ img {
       gap: 40px;
     }
     }
-       
+    
+        @media screen and (min-width: 1158px) {
+        .current-link {
+            position: relative;
+            color: #404BBF;
+            padding-bottom: 20px;
+          }
+        }
 
 
 
@@ -826,8 +852,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 384px;
-  min-width: 284px;
+  min-height: auto;
+  min-width: auto;
   background: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1968,18 +1994,52 @@ border-radius: 0px 0px 4px 4px;
 } */
 
 /* -----------------FOOTER -----------------------*/
-@media screen and (max-width: 767px) {
+
+ .logo-list {
+   color: #F4F4FD;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.16;
+   letter-spacing: 0.03em;
+ }
+
+ .logo-footer-studio {
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.16;
+   letter-spacing: 0.03em;
+   color: #4D5AE5;
+ }
+
+ .footer-text {
+   max-width: 264px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #F4F4FD;
+   /* margin-top: 16px; */
+ }
+
+ .footer-list {
+
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #FFFFFF;
+   margin-bottom: 16px;
+ }
+
+@media screen and (max-width: 1157px) {
   .footer {
     background: #2f303a;
     padding-top: 96px;
     padding-bottom: 96px;
   }
 
-  .styles {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
+  
 
   .logo-list {
     color: #F4F4FD;
@@ -2005,10 +2065,18 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    text-align: center;
     margin-top: 16px;
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .footer {
+      background: #2f303a;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+}
 
 /* .footer {
   background: #2f303a;
@@ -2271,11 +2339,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.current-link {
+/* .current-link {
 position: relative;
 color: #404BBF;
 padding-bottom: 28px;
-}
+} */
 
 .current-link::after {
   opacity: 1;
