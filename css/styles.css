@@ -2195,19 +2195,14 @@ border-radius: 0px 0px 4px 4px;
                /* ---TABLET-------- */
 
  @media screen and (min-width: 768px) {
- /* .modal-form-footer {
-  display: flex;
-  gap: 24px;
- } */
+ 
 
  .footer-page {
   display: flex;
   flex-wrap: nowrap;
  }
 
- .styles-footer-main {
-
- }
+ 
 
  .styles-item {
   width: 208px;
