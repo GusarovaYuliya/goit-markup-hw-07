@@ -2032,6 +2032,7 @@ border-radius: 0px 0px 4px 4px;
 
 /* -----------------FOOTER -----------------------*/
 
+
  .logo-list {
    color: #F4F4FD;
    font-weight: 800;
@@ -2056,6 +2057,7 @@ border-radius: 0px 0px 4px 4px;
    letter-spacing: 0.02em;
    color: #F4F4FD;
    /* margin-top: 16px; */
+   /* margin-bottom: 72px; */
  }
 
  .footer-list {
@@ -2103,6 +2105,113 @@ border-radius: 0px 0px 4px 4px;
 
  }
 
+ .footer-sotial-list {
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+ }
+
+ .clients-sotial-item {
+   background: #4D5AE5;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   fill: #F4F4FD;
+   fill: currentColor;
+   width: 40px;
+   height: 40px;
+ }
+
+ .client-page-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background-color: #4d5ae5;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .client-page-link:hover,
+ .client-page-link:focus {
+   background-color: #31D0AA;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .clients-sotial-icon {
+   fill: #F4F4FD;
+ }
+
+ .modal-form-input-footer::placeholder {
+      color: #ffffff;
+    }
+  
+    .modal-form-footer-submit {
+      min-width: 165px;
+      height: 40px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      display: flex;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      padding: 8px 24px;
+      background-color: #4D5AE5;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+    }
+
+        .modal-form-input-icon {
+          margin-left: 16px;
+        }
+
+    @media screen and (min-width: 428px) and (max-width: 767px) {
+      .modal-form-input-footer {
+        width: 398px;
+      }
+        
+      .footer-page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+        
+      .logo-footer-studio {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #4D5AE5;
+        justify-content: center;
+        align-items: baseline;
+      }
+        
+      .footer-page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+        
+      .styles-footer-main {
+        justify-content: center;
+        align-items: baseline;
+      }
+    }
+        
+    @media screen and (min-width: 320px) and (max-width: 427px) {
+      .modal-form-input-footer {
+       width: 264px;
+       }
+        
+    }
+
 @media screen and (max-width: 1157px) {
   .footer {
     background: #2f303a;
@@ -2123,13 +2232,13 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.03em;
   }
 
-  .logo-footer-studio {
+  /* .logo-footer-studio {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #4D5AE5;
-  }
+  } */
 
   .footer-text {
     width: 268px;
@@ -2142,7 +2251,10 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     margin-top: 16px;
   }
-
+.styles-item {
+  margin-left: 24px;
+  align-items: baseline;
+}
     
 }
 
@@ -2156,12 +2268,18 @@ border-radius: 0px 0px 4px 4px;
   .footer-page {
     display: flex;
     align-items: baseline;
+
   }
 
+    .footer-text {
+      margin-top: 16px;
+    }
+
   .styles-item {
-    gap: 120px;
+    margin-left: 120px;
     align-items: baseline;
    }
+
   .modal-form-footer {
     display: flex;
   }
@@ -2172,8 +2290,37 @@ border-radius: 0px 0px 4px 4px;
 
   .styles-item-footer-navigation {
     margin-left: 80px;
+    justify-content: center;
     align-items: baseline;
   }
+
+    .modal-form-input-footer {
+      width: 264px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      box-sizing: border-box;
+      border: 1px solid #FFFFFF;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: transparent;
+      padding-left: 16px;
+  
+    }
+  
+    .modal-form-input-footer::placeholder {
+      color: #ffffff;
+    }
+  
+    
+    .modal-form-input-icon {
+      margin-left: 16px;
+    }
 
     .modal-form-input-footer {
       width: 264px;
@@ -2181,17 +2328,7 @@ border-radius: 0px 0px 4px 4px;
         
     }
 
-  @media screen and (min-width: 428px) and (max-width: 767px) {
-    .modal-form-input-footer {
-     width: 398px;
-     }
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 427px) {
-    .modal-form-input-footer {
-      width: 264px;
-    }
-  }
+  
 
 /* .footer {
   background: #2f303a;
@@ -2327,7 +2464,74 @@ border-radius: 0px 0px 4px 4px;
   margin-left: 16px;
 }
  */
+/* .footer-sotial-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 
+.clients-sotial-item {
+  background: #4D5AE5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #F4F4FD;
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+}
+
+.client-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-page-link:hover,
+.client-page-link:focus {
+  background-color: #31D0AA;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-sotial-icon {
+  fill: #F4F4FD;
+}
+
+
+.clients-sotial-item {
+  background: #4D5AE5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #F4F4FD;
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+}
+
+.client-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.client-page-link:hover,
+.client-page-link:focus {
+  background-color: #31D0AA;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-sotial-icon {
+  fill: #F4F4FD;
+} */
 
 /* --------------------Портфолио ----------------------------*/
 :root {
