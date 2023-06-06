@@ -2061,6 +2061,13 @@ border-radius: 0px 0px 4px 4px;
    
  }
 
+ .footer-page {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
  .footer-list {
 
    font-style: normal;
@@ -2247,6 +2254,7 @@ border-radius: 0px 0px 4px 4px;
 
   .footer-page {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
 
   }
@@ -2355,6 +2363,7 @@ border-radius: 0px 0px 4px 4px;
 
   .footer-page {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
