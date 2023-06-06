@@ -2330,6 +2330,14 @@ border-radius: 0px 0px 4px 4px;
   margin-top: 72px;
  }
 
+ .styles-footer-main {
+  text-align: center;
+ }
+
+ .footer-text {
+  text-align: start;
+ }
+
  /* .styles-item-footer-navigation {
   gap: 16px;
  } */
@@ -2353,7 +2361,8 @@ border-radius: 0px 0px 4px 4px;
   }
 
   .modal-form-footer-submit {
-    text-align: center;
+   margin-right: auto;
+   margin-left: auto;
     margin-top: 16px;
     
   }
@@ -2367,6 +2376,30 @@ border-radius: 0px 0px 4px 4px;
   .modal-form-input-footer {
     width: 264px;
   }
+
+.styles-footer-main {
+  text-align: center;
+}
+
+.footer-text {
+  text-align: start;
+}
+
+.footer-elements-sybscribe {
+margin-top: 72px;
+}
+
+
+.styles-item-footer-navigation {
+  text-align: center;
+}
+
+.modal-form-footer-submit {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16px;
+
+}
 
     .logo-footer-studio {
       font-weight: 800;
