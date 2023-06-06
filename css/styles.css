@@ -232,16 +232,25 @@ img {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #434455;
-        padding-bottom: 48px;
+        /* padding-bottom: 48px; */
      }
     
          
-
-     .mobile-stydio-list {
-      display: flex;
-      justify-content: center;
-      gap: 56px;
-        }
+ @media screen and (max-width: 427px) {
+  .mobile-stydio-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+ }
+    @media screen and (min-width: 428px) {
+    .mobile-stydio-list {
+        display: flex;
+        justify-content: center;
+        gap: 56px;
+      }
+    }
+    
 
       .mobile-stydio-item {
       align-items: center;
@@ -287,9 +296,9 @@ img {
   margin: 0;
 }
 
-.header-item-stydio {
+/* .header-item-stydio {
   margin-bottom: 40px;
-}
+} */
 
 .mobile-stydio {
   font-weight: 700;
@@ -320,18 +329,35 @@ img {
   margin-bottom: 48px;
 }
 
+@media screen and (max-width: 427px) {
 .contact-class-stydio-navigation-tel {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--modal-color-first);
-  padding-bottom: 40px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--modal-color-first);
+  }
 }
+
+@media screen and (min-width: 428px) {
+  .contact-class-stydio-navigation-tel {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--modal-color-first);
+  }
+}
+
+
 
 .contact-class-stydio-navigation-mail {
   font-weight: 500;
@@ -341,12 +367,23 @@ img {
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+ 
+@media screen and (max-width: 427px) {
+  .mobile-stydio-list {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+}
 
- .mobile-stydio-list {
-   display: flex;
-   justify-content: center;
-   gap: 56px;
- }
+@media screen and (min-width: 428px) {
+.mobile-stydio-list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+  }
+}
+ 
 
 .stydio-stydio-item {
   align-items: center;
@@ -2031,6 +2068,40 @@ border-radius: 0px 0px 4px 4px;
    color: #FFFFFF;
    margin-bottom: 16px;
  }
+ 
+ .footer-sotial-list {
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+ }
+
+ .footer-elements-sybscribe {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #FFFFFF;
+   margin-bottom: 16px;
+ }
+
+ .modal-form-input-footer {
+   width: 398px;
+   height: 40px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.5;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   box-sizing: border-box;
+   border: 1px solid #FFFFFF;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   background-color: transparent;
+   padding-left: 16px;
+
+ }
 
 @media screen and (max-width: 1157px) {
   .footer {
@@ -2039,7 +2110,10 @@ border-radius: 0px 0px 4px 4px;
     padding-bottom: 96px;
   }
 
-  
+    .modal-form-input-footer {
+      width: 264px;
+    }
+
 
   .logo-list {
     color: #F4F4FD;
@@ -2068,6 +2142,8 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     margin-top: 16px;
   }
+
+    
 }
 
 @media screen and (min-width: 1158px) {
@@ -2076,7 +2152,46 @@ border-radius: 0px 0px 4px 4px;
       padding-top: 100px;
       padding-bottom: 100px;
     }
-}
+
+  .footer-page {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .styles-item {
+    gap: 120px;
+    align-items: baseline;
+   }
+  .modal-form-footer {
+    display: flex;
+  }
+    
+  .modal-form-footer-field {
+    margin-right: 24px;
+  }
+
+  .styles-item-footer-navigation {
+    margin-left: 80px;
+    align-items: baseline;
+  }
+
+    .modal-form-input-footer {
+      width: 264px;
+    }
+        
+    }
+
+  @media screen and (min-width: 428px) and (max-width: 767px) {
+    .modal-form-input-footer {
+     width: 398px;
+     }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 427px) {
+    .modal-form-input-footer {
+      width: 264px;
+    }
+  }
 
 /* .footer {
   background: #2f303a;
