@@ -2056,8 +2056,9 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #F4F4FD;
-   /* margin-top: 16px; */
+   margin-top: 16px;
    /* margin-bottom: 72px; */
+   
  }
 
  .footer-list {
@@ -2069,13 +2070,14 @@ border-radius: 0px 0px 4px 4px;
    letter-spacing: 0.02em;
    color: #FFFFFF;
    margin-bottom: 16px;
+   margin-top: 72px;
  }
  
- .footer-sotial-list {
+ /* .footer-sotial-list {
    display: flex;
    justify-content: center;
    gap: 16px;
- }
+ } */
 
  .footer-elements-sybscribe {
    font-weight: 500;
@@ -2172,45 +2174,14 @@ border-radius: 0px 0px 4px 4px;
           margin-left: 16px;
         }
 
-    @media screen and (min-width: 428px) and (max-width: 767px) {
-      .modal-form-input-footer {
-        width: 398px;
-      }
-        
-      .footer-page {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
-        
-      .logo-footer-studio {
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: #4D5AE5;
-        justify-content: center;
-        align-items: baseline;
-      }
-        
-      .footer-page {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
-        
-      .styles-footer-main {
-        justify-content: center;
-        align-items: baseline;
-      }
-    }
-        
-    @media screen and (min-width: 320px) and (max-width: 427px) {
-      .modal-form-input-footer {
-       width: 264px;
-       }
-        
-    }
+ @media screen and (min-width: 768px) {
+ .modal-form-footer {
+  display: flex;
+  gap: 24px;
+ }
+
+ 
+ }
 
 @media screen and (max-width: 1157px) {
   .footer {
@@ -2219,10 +2190,18 @@ border-radius: 0px 0px 4px 4px;
     padding-bottom: 96px;
   }
 
+/* .styles-footer-main {
+  display: flex;
+} */
+
     .modal-form-input-footer {
       width: 264px;
     }
 
+.logo-footer-studio {
+  justify-content: center;
+  align-items: center;
+}
 
   .logo-list {
     color: #F4F4FD;
@@ -2248,9 +2227,10 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    text-align: center;
-    margin-top: 16px;
+    text-align: baseline;
+    
   }
+
 .styles-item {
   margin-left: 24px;
   align-items: baseline;
@@ -2271,9 +2251,9 @@ border-radius: 0px 0px 4px 4px;
 
   }
 
-    .footer-text {
+    /* .footer-text {
       margin-top: 16px;
-    }
+    } */
 
   .styles-item {
     margin-left: 120px;
@@ -2327,6 +2307,85 @@ border-radius: 0px 0px 4px 4px;
     }
         
     }
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .modal-form-input-footer {
+    width: 398px;
+  }
+
+  /* .footer-text {
+    margin-bottom: 72px;
+  } */
+
+  .footer-list {
+    justify-content: center; 
+    text-align: center;
+    align-items: center;
+  }
+
+ .footer-elements-sybscribe {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 72px;
+ }
+
+ /* .styles-item-footer-navigation {
+  gap: 16px;
+ } */
+
+  .logo-footer-studio {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .modal-form-footer-submit {
+    text-align: center;
+    margin-top: 16px;
+    
+  }
+  /* .styles-footer-main {
+    justify-content: center;
+    align-items: baseline;
+  } */
+}
+
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .modal-form-input-footer {
+    width: 264px;
+  }
+
+    .logo-footer-studio {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: #4D5AE5;
+      justify-content: center;
+      align-items: baseline;
+    }
+  
+    .footer-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+}
 
   
 
