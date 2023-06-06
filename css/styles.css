@@ -2048,25 +2048,30 @@ border-radius: 0px 0px 4px 4px;
    letter-spacing: 0.03em;
    color: #4D5AE5;
  }
+@media screen and (max-widht:767px) {
+.footer-text {
+    max-width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    margin-top: 16px;
+    /* margin-bottom: 72px; */
 
- .footer-text {
-   max-width: 264px;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-   color: #F4F4FD;
-   margin-top: 16px;
-   /* margin-bottom: 72px; */
-   
- }
+  }
+}
+ 
 
- .footer-page {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
- }
+@media screen and (max-widht:767px) {
+.footer-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+ 
 
  .footer-list {
 
@@ -2242,6 +2247,8 @@ border-radius: 0px 0px 4px 4px;
   margin-left: 24px;
   align-items: baseline;
 }
+
+
     
 }
 
@@ -2254,14 +2261,20 @@ border-radius: 0px 0px 4px 4px;
 
   .footer-page {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: baseline;
 
   }
 
-    /* .footer-text {
-      margin-top: 16px;
-    } */
+  .footer-text {
+   max-width: 264px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #F4F4FD;
+   margin-top: 16px;
+   }
 
   .styles-item {
     margin-left: 120px;
@@ -2338,9 +2351,6 @@ border-radius: 0px 0px 4px 4px;
   margin-top: 72px;
  }
 
- .styles-footer-main {
-  text-align: center;
- }
 
  .footer-text {
   text-align: start;
@@ -2363,7 +2373,7 @@ border-radius: 0px 0px 4px 4px;
 
   .footer-page {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -2375,16 +2385,17 @@ border-radius: 0px 0px 4px 4px;
     margin-top: 16px;
     
   }
-  /* .styles-footer-main {
-    justify-content: center;
-    align-items: baseline;
-  } */
+  .styles-footer-main {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .modal-form-input-footer {
     width: 264px;
   }
+
+
 
 .styles-footer-main {
   text-align: center;
@@ -2398,6 +2409,9 @@ border-radius: 0px 0px 4px 4px;
 margin-top: 72px;
 }
 
+.footer-list {
+  text-align: center;
+}
 
 .styles-item-footer-navigation {
   text-align: center;
