@@ -2209,11 +2209,12 @@ border-radius: 0px 0px 4px 4px;
  
 .container-social-footer {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    justify-content: center;
+    padding-left: 108px;
+    /* justify-content: center; */
   }
  
  }
@@ -2251,6 +2252,7 @@ border-radius: 0px 0px 4px 4px;
       row-gap: 72px;  
         flex-direction: row;
         justify-content: center;
+       
     }
 
 .styles-item {
