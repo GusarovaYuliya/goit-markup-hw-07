@@ -1570,7 +1570,7 @@ border: none;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 64px;
+    row-gap: 72px;
   }
 }
 
@@ -1615,7 +1615,6 @@ border: none;
     width: 264px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 72px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -1870,7 +1869,7 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 168px;
+    width: 190px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -1919,6 +1918,7 @@ border-radius: 0px 0px 4px 4px;
   .clients-item {
     width: calc((100% - 48px) / 3);
     height: 88px;
+    width: 168px;
   }
 }
 
@@ -1949,6 +1949,7 @@ border-radius: 0px 0px 4px 4px;
 .clients-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+    width: 168px;
   }
 }
 
@@ -2064,6 +2065,7 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #F4F4FD;
+   margin-top: 16px;
   
  }
 
@@ -2079,6 +2081,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    margin-top: 16px;
     
   }
 }
@@ -2101,6 +2104,7 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #FFFFFF;
+   margin-bottom: 16px;
   
  }
 
@@ -2110,6 +2114,7 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #FFFFFF;
+   margin-bottom: 16px;
 
  }
 
@@ -2224,8 +2229,10 @@ border-radius: 0px 0px 4px 4px;
     width: 264px;
   }
 
-   
-  
+  /* .footer-elements-sybscribe {
+    text-align: start;
+  }
+   */
   
   
     /* .styles-item {
@@ -2239,10 +2246,10 @@ border-radius: 0px 0px 4px 4px;
       /* column-gap: 24px; */
     }
 
-/* .styles-item {
+.styles-item {
   margin-left: 24px;
   align-items: baseline;
-}    */
+}   
 }
 
    /* ------DASKTOP------- */
@@ -2269,6 +2276,7 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #F4F4FD;
+   margin-top: 16px;
  
    }
 
@@ -2332,18 +2340,21 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center; 
     text-align: center;
     align-items: center;
+    margin-bottom: 16px;
   }
 
  .footer-elements-sybscribe {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-bottom: 16px;
  
  }
 
 
  .footer-text {
   text-align: start;
+  margin-top: 16px;
   
  }
 
@@ -2390,7 +2401,7 @@ border-radius: 0px 0px 4px 4px;
 
 .footer-text {
   text-align: start;
-  /* margin-top: 16px; */
+  margin-top: 16px;
  
 }
 
@@ -2400,6 +2411,7 @@ margin-top: 72px;
 
 .footer-list {
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .styles-item-footer-navigation {
