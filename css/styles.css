@@ -2229,6 +2229,10 @@ border-radius: 0px 0px 4px 4px;
     width: 264px;
   }
 
+  /* .modal-form-footer-field {
+    align-items: baseline ;
+  } */
+
   /* .footer-elements-sybscribe {
     text-align: start;
   }
@@ -2243,7 +2247,10 @@ border-radius: 0px 0px 4px 4px;
     .modal-form-footer {
       display: flex;
       flex-wrap: wrap;
-      /* column-gap: 24px; */
+      column-gap: 24px;
+      row-gap: 72px;  
+        flex-direction: row;
+        justify-content: center;
     }
 
 .styles-item {
@@ -2287,6 +2294,7 @@ border-radius: 0px 0px 4px 4px;
 
   .modal-form-footer {
     display: flex;
+    column-gap: 24px
   }
 
   .styles-item-footer-navigation {
