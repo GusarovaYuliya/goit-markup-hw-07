@@ -2275,6 +2275,9 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+    row-gap: 0;
+    column-gap: 0;
+   padding-left: 15px;
 
   }
 
