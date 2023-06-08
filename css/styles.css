@@ -1203,11 +1203,11 @@ border: none;
   clip: rect(0 0 0 0);
 }
 
-@media screen and (min_width:320px) and (max-width:427px) {
+/* @media screen and (min_width:320px) and (max-width:427px) {
   .main-text-primary {
     display: flex;
   }
-}
+} */
 
    /* ---------BUTTON------------- */
 .modal-form-submit {
