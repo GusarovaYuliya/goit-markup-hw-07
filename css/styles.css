@@ -1002,7 +1002,23 @@ img {
 
  
 
+@media screen and (max-width:427px) {
+.text-modal-open {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 16px;
+  }
 
+  .mini-text-modal {
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width:428px) {
 .text-modal-open {
     font-weight: 500;
     font-size: 16px;
@@ -1012,6 +1028,8 @@ img {
     color: #2E2F42;
     margin-bottom: 16px;
   }
+}
+
 
 
 
@@ -1190,21 +1208,26 @@ border: none;
 }
 
 /* ----------INPUT-CHECKBOX------------ */
+@media screen and (max-width:427px) {
 .modal-form-check-top {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color:#8e8f99;
+    font-size: 10px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+  }
 }
 
+@media screen and (min-width:428px) {
 .modal-form-check {
-  display: flex;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8E8F99;
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+  }
 }
+
 
 .accent-primary-text {
   color:#4d5ae5;
@@ -1221,11 +1244,15 @@ border: none;
   clip: rect(0 0 0 0);
 }
 
-/* @media screen and (min_width:320px) and (max-width:427px) {
+@media screen and (min_width:320px) and (max-width:427px) {
   .main-text-primary {
+    display: inline-flex;
+  }
+
+  .modal-form-check-top {
     display: flex;
   }
-} */
+}
 
    /* ---------BUTTON------------- */
 .modal-form-submit {
