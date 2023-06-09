@@ -1010,7 +1010,7 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   .mini-text-modal {
@@ -1208,6 +1208,7 @@ border: none;
 }
 
 /* ----------INPUT-CHECKBOX------------ */
+
 @media screen and (max-width:427px) {
 .modal-form-check-top {
     font-size: 10px;
@@ -1218,6 +1219,14 @@ border: none;
 }
 
 @media screen and (min-width:428px) {
+  .modal-form-check-top {
+    font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      color: #8e8f99;
+    }
+
 .modal-form-check {
     display: flex;
     font-weight: 400;
