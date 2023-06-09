@@ -895,7 +895,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 584px;
-    width: 100%;
+    width: 320px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -905,6 +905,16 @@ img {
     padding-top: 72px;
     padding-bottom: 24px;
   }
+
+    /* .modal-form-field {
+      font-size: 4px;
+      line-height: 1.11;
+      letter-spacing: 0.01em;
+      color: #8e8f99;
+      font-weight: 200;
+      display: block;
+      margin-bottom: 4px;
+    } */
     }
 
 
@@ -915,7 +925,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 584px;
-    width: 100%;
+    width: 392px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -982,13 +992,16 @@ img {
   padding-bottom: 24px;
 } */
 
-.text-form-modal {
+/* .text-form-modal {
   margin-bottom: 8px;
-}
-.text-form-modal-comment {
+} */
+/* .text-form-modal-comment {
   margin-bottom: 16px;
-}
+} */
          /* ----------P------------ */
+
+ 
+
 
 .text-modal-open {
     font-weight: 500;
@@ -998,7 +1011,11 @@ img {
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 16px;
-}
+  }
+
+
+
+
         /* ---------BUTTON------------- */
 
 .modal-close-btn {
@@ -1105,6 +1122,7 @@ border: none;
   resize: none;
   width: 100%;
   height: 120px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1117,7 +1135,7 @@ border: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #4D5AE5;
   border: 1px solid rgba(46, 47, 66, 0.2);
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .modal-form-message:focus {
@@ -1138,9 +1156,9 @@ border: none;
   margin-bottom: 24px;
 }
 
-.modal-form-check-desk {
+/* .modal-form-check-desk {
   margin-bottom: 24px;
-}
+} */
 /* --------------SVG-CHECKBOX------------- */
 
 
@@ -1583,10 +1601,19 @@ border: none;
   }
 }
 
+@media screen and (min-width: 428px) and (max-width:767px) {
+.command-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width:1157px) {
   .command-item {
     width: calc((100% - 208px) /2);
     margin: 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
   }
 }
 
